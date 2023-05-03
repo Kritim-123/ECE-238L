@@ -1,0 +1,353 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Apr 27 17:11:35 2023
+# Process ID: 21152
+# Current directory: C:/Users/kbastola1/Desktop/D/D.runs/synth_1
+# Command line: vivado.exe -log TopModule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopModule.tcl
+# Log file: C:/Users/kbastola1/Desktop/D/D.runs/synth_1/TopModule.vds
+# Journal file: C:/Users/kbastola1/Desktop/D/D.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopModule.tcl -notrace
+Command: synth_design -top TopModule -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 352 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 819.266 ; gain = 178.184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopModule' [C:/Users/kbastola1/Desktop/D/D.srcs/sources_1/new/TopModule.vhd:42]
+INFO: [Synth 8-3491] module 'FrequencyDivider' declared at 'C:/Users/kbastola1/Desktop/D/D.srcs/sources_1/imports/new/FrequencyDivider.vhd:35' bound to instance 'FreqDiv' of component 'FrequencyDivider' [C:/Users/kbastola1/Desktop/D/D.srcs/sources_1/new/TopModule.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'FrequencyDivider' [C:/Users/kbastola1/Desktop/D/D.srcs/sources_1/imports/new/FrequencyDivider.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'FrequencyDivider' (1#1) [C:/Users/kbastola1/Desktop/D/D.srcs/sources_1/imports/new/FrequencyDivider.vhd:40]
+INFO: [Synth 8-3491] module 'keyboard' declared at 'C:/Users/kbastola1/Desktop/D/D.srcs/sources_1/imports/new/keyboard.vhd:35' bound to instance 'kbController' of component 'keyboard' [C:/Users/kbastola1/Desktop/D/D.srcs/sources_1/new/TopModule.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [C:/Users/kbastola1/Desktop/D/D.srcs/sources_1/imports/new/keyboard.vhd:43]
+WARNING: [Synth 8-6014] Unused sequential element breakReceived_reg was removed.  [C:/Users/kbastola1/Desktop/D/D.srcs/sources_1/imports/new/keyboard.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (2#1) [C:/Users/kbastola1/Desktop/D/D.srcs/sources_1/imports/new/keyboard.vhd:43]
+INFO: [Synth 8-3491] module 'HexDisp' declared at 'C:/Users/kbastola1/Desktop/D/D.srcs/sources_1/imports/new/HexDisp.vhd:34' bound to instance 'SevSegDisp' of component 'HexDisp' [C:/Users/kbastola1/Desktop/D/D.srcs/sources_1/new/TopModule.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'HexDisp' [C:/Users/kbastola1/Desktop/D/D.srcs/sources_1/imports/new/HexDisp.vhd:40]
+INFO: [Synth 8-3491] module 'ROM' declared at 'C:/Users/kbastola1/Desktop/D/D.runs/synth_1/.Xil/Vivado-21152-ece-d64251/realtime/ROM_stub.v:6' bound to instance 'SevSegvalues' of component 'ROM' [C:/Users/kbastola1/Desktop/D/D.srcs/sources_1/imports/new/HexDisp.vhd:51]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [C:/Users/kbastola1/Desktop/D/D.runs/synth_1/.Xil/Vivado-21152-ece-d64251/realtime/ROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (3#1) [C:/Users/kbastola1/Desktop/D/D.runs/synth_1/.Xil/Vivado-21152-ece-d64251/realtime/ROM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'HexDisp' (4#1) [C:/Users/kbastola1/Desktop/D/D.srcs/sources_1/imports/new/HexDisp.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'TopModule' (5#1) [C:/Users/kbastola1/Desktop/D/D.srcs/sources_1/new/TopModule.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 883.207 ; gain = 242.125
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 883.207 ; gain = 242.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 883.207 ; gain = 242.125
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/kbastola1/Desktop/D/D.srcs/sources_1/ip/ROM/ROM/ROM_in_context.xdc] for cell 'SevSegDisp/SevSegvalues'
+Finished Parsing XDC File [c:/Users/kbastola1/Desktop/D/D.srcs/sources_1/ip/ROM/ROM/ROM_in_context.xdc] for cell 'SevSegDisp/SevSegvalues'
+Parsing XDC File [C:/Users/kbastola1/Desktop/D/D.srcs/constrs_1/new/D_Constrain.xdc]
+Finished Parsing XDC File [C:/Users/kbastola1/Desktop/D/D.srcs/constrs_1/new/D_Constrain.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/kbastola1/Desktop/D/D.srcs/constrs_1/new/D_Constrain.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopModule_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopModule_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/kbastola1/Desktop/D/D.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/kbastola1/Desktop/D/D.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 983.523 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 983.523 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 983.523 ; gain = 342.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 983.523 ; gain = 342.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for SevSegDisp/SevSegvalues. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 983.523 ; gain = 342.441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'sClock_1Hz_reg' into 'Clock_1Hz_reg' [C:/Users/kbastola1/Desktop/D/D.srcs/sources_1/imports/new/FrequencyDivider.vhd:53]
+INFO: [Synth 8-802] inferred FSM for state register 'sigSevSegAn_reg' in module 'TopModule'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                         11111110
+                  iSTATE |                                1 |                         11111101
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sigSevSegAn_reg' using encoding 'sequential' in module 'TopModule'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 983.523 ; gain = 342.441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TopModule 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module FrequencyDivider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module keyboard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design TopModule has port Anode_7SD[7] driven by constant 1
+WARNING: [Synth 8-3917] design TopModule has port Anode_7SD[6] driven by constant 1
+WARNING: [Synth 8-3917] design TopModule has port Anode_7SD[5] driven by constant 1
+WARNING: [Synth 8-3917] design TopModule has port Anode_7SD[4] driven by constant 1
+WARNING: [Synth 8-3917] design TopModule has port Anode_7SD[3] driven by constant 1
+WARNING: [Synth 8-3917] design TopModule has port Anode_7SD[2] driven by constant 1
+INFO: [Synth 8-3886] merging instance 'i_0/kbController/bitCount_reg[5]' (FDE_1) to 'i_0/kbController/bitCount_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/kbController/bitCount_reg[6]' (FDE_1) to 'i_0/kbController/bitCount_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\kbController/bitCount_reg[4] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 983.523 ; gain = 342.441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 983.523 ; gain = 342.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 983.523 ; gain = 342.441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 996.305 ; gain = 355.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1002.082 ; gain = 361.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1002.082 ; gain = 361.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1002.082 ; gain = 361.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1002.082 ; gain = 361.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1002.082 ; gain = 361.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1002.082 ; gain = 361.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ROM           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |ROM    |     1|
+|2     |BUFG   |     2|
+|3     |CARRY4 |     8|
+|4     |LUT1   |     2|
+|5     |LUT3   |     4|
+|6     |LUT4   |     9|
+|7     |LUT5   |     7|
+|8     |LUT6   |     1|
+|9     |FDRE   |    59|
+|10    |IBUF   |     3|
+|11    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+-----------------+------+
+|      |Instance       |Module           |Cells |
++------+---------------+-----------------+------+
+|1     |top            |                 |   119|
+|2     |  FreqDiv      |FrequencyDivider |    52|
+|3     |  SevSegDisp   |HexDisp          |     8|
+|4     |  kbController |keyboard         |    32|
++------+---------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1002.082 ; gain = 361.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1002.082 ; gain = 260.684
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1002.082 ; gain = 361.000
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1019.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1019.367 ; gain = 633.613
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1019.367 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/kbastola1/Desktop/D/D.runs/synth_1/TopModule.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TopModule_utilization_synth.rpt -pb TopModule_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 27 17:12:14 2023...

@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Gray_Code_Counter.srcs/sources_1/imports/new/FrequencyDivider.vhd" \
+"../../../../Gray_Code_Counter.srcs/sources_1/new/grayCode.vhd" \
+"../../../../Gray_Code_Counter.srcs/sim_1/new/Gray_Code_simulation.vhd" \
+
+# Do not sort compile order
+nosort

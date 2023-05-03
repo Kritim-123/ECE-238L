@@ -1,0 +1,415 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Mar 23 15:06:50 2023
+# Process ID: 12200
+# Current directory: C:/Users/kbastola1/Desktop/Lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11388 C:\Users\kbastola1\Desktop\Lab5\Lab5.xpr
+# Log file: C:/Users/kbastola1/Desktop/Lab5/vivado.log
+# Journal file: C:/Users/kbastola1/Desktop/Lab5\vivado.jou
+#-----------------------------------------------------------
+start_guiopen_project C:/Users/kbastola1/Desktop/Lab5/Lab5.xpr
+Scanning sources...
+Finished scanning sources
+IINFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specifiedINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 759.754 ; gain = 156.262
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_project
+create_project {Top Module} {C:/Users/kbastola1/Desktop/Top Module} -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+import_files -norecurse C:/Users/kbastola1/Desktop/Counter/Counter.srcs/sources_1/new/Counter.vhd
+update_compile_order -fileset sources_1
+import_files -norecurse C:/Users/kbastola1/Desktop/DisplayDigits/DisplayDigits.srcs/sources_1/new/displayDigits.vhd
+update_compile_order -fileset sources_1
+file mkdir C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sources_1/new
+file mkdir C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sources_1/new
+file mkdir C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sources_1/new
+file mkdir C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sources_1/new
+file mkdir C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sources_1/new
+file mkdir C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sources_1/new
+file mkdir {C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sources_1/new}
+close [ open {C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sources_1/new/top_Module.vhd} w ]
+add_files {{C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sources_1/new/top_Module.vhd}}
+update_compile_order -fileset sources_1
+import_files -norecurse C:/Users/kbastola1/Desktop/FrequencyDivider/FrequencyDivider.srcs/sources_1/new/FrequencyDivider.vhd
+update_compile_order -fileset sources_1
+import_files -norecurse C:/Users/kbastola1/Desktop/Lab_4B/Lab_4B.srcs/sources_1/new/Lab_4B.vhd
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Thu Mar 23 16:00:28 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Top Module/Top Module.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kbastola1/Desktop/Top Module/Top Module.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_Module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kbastola1/Desktop/Top Module/Top Module.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_Module_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sources_1/imports/new/Counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sources_1/imports/new/FrequencyDivider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FrequencyDivider'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sources_1/imports/new/Lab_4B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab_4B'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sources_1/imports/new/displayDigits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'displayDigits'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sources_1/new/top_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_Module'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kbastola1/Desktop/Top Module/Top Module.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+"xelab -wto 8142457e973f4df398417ff618110f20 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_Module_behav xil_defaultlib.top_Module -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8142457e973f4df398417ff618110f20 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_Module_behav xil_defaultlib.top_Module -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <Reset> does not exist in entity <Lab_4B>.  Please compare the definition of block <Lab_4B> to its component declaration and its instantion to detect the mismatch. [C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sources_1/imports/new/Counter.vhd:52]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit top_module in library work failed.
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Mar 23 16:02:02 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Top Module/Top Module.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Mar 23 16:08:52 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Top Module/Top Module.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kbastola1/Desktop/Top Module/Top Module.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_Module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kbastola1/Desktop/Top Module/Top Module.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_Module_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sources_1/imports/new/Lab_4B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab_4B'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kbastola1/Desktop/Top Module/Top Module.sim/sim_1/behav/xsim'
+"xelab -wto 8142457e973f4df398417ff618110f20 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_Module_behav xil_defaultlib.top_Module -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8142457e973f4df398417ff618110f20 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_Module_behav xil_defaultlib.top_Module -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture boolean_function of entity xil_defaultlib.FrequencyDivider [frequencydivider_default]
+Compiling architecture boolean_function of entity xil_defaultlib.Lab_4B [lab_4b_default]
+Compiling architecture boolean_function of entity xil_defaultlib.Counter [counter_default]
+Compiling architecture boolean_function of entity xil_defaultlib.displayDigits [displaydigits_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_module
+Built simulation snapshot top_Module_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/kbastola1/Desktop/Top -notrace
+couldn't read file "C:/Users/kbastola1/Desktop/Top": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 23 16:09:32 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 864.676 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kbastola1/Desktop/Top Module/Top Module.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_Module_behav -key {Behavioral:sim_1:Functional:top_Module} -tclbatch {top_Module.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source top_Module.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_Module_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 886.250 ; gain = 21.574
+file mkdir C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sim_1/new
+file mkdir C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sim_1/new
+file mkdir C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sim_1/new
+file mkdir C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sim_1/new
+file mkdir C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sim_1/new
+file mkdir {C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sim_1/new}
+close [ open {C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sim_1/new/Top Module_bench.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sim_1/new/Top Module_bench.vhd}}
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sim_1/new/Top Module_bench.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sim_1/new/Top Module_bench.vhd}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sim_1/new/topModule_bench.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sim_1/new/topModule_bench.vhd}}
+update_compile_order -fileset sim_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/kbastola1/Desktop/Top Module/Top Module.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu Mar 23 16:19:06 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Top Module/Top Module.runs/synth_1/runme.log
+update_compile_order -fileset sim_1
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/kbastola1/Desktop/Top Module/Top Module.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kbastola1/Desktop/Top Module/Top Module.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'topModule_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kbastola1/Desktop/Top Module/Top Module.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj topModule_bench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sim_1/new/topModule_bench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'topModule_bench'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kbastola1/Desktop/Top Module/Top Module.sim/sim_1/behav/xsim'
+"xelab -wto 8142457e973f4df398417ff618110f20 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot topModule_bench_behav xil_defaultlib.topModule_bench -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8142457e973f4df398417ff618110f20 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot topModule_bench_behav xil_defaultlib.topModule_bench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture boolean_function of entity xil_defaultlib.FrequencyDivider [frequencydivider_default]
+Compiling architecture boolean_function of entity xil_defaultlib.Lab_4B [lab_4b_default]
+Compiling architecture boolean_function of entity xil_defaultlib.Counter [counter_default]
+Compiling architecture boolean_function of entity xil_defaultlib.displayDigits [displaydigits_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_Module [top_module_default]
+Compiling architecture bench of entity xil_defaultlib.topmodule_bench
+Built simulation snapshot topModule_bench_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/kbastola1/Desktop/Top -notrace
+couldn't read file "C:/Users/kbastola1/Desktop/Top": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 23 16:20:04 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kbastola1/Desktop/Top Module/Top Module.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "topModule_bench_behav -key {Behavioral:sim_1:Functional:topModule_bench} -tclbatch {topModule_bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source topModule_bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'topModule_bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 890.629 ; gain = 0.000
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1198.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1371.781 ; gain = 481.152
+place_ports {Anode_7SD[7]} K2
+set_property package_pin "" [get_ports [list  {Anode_7SD[6]}]]
+place_ports {Anode_7SD[7]} U13
+place_ports {Anode_7SD[6]} K2
+place_ports {Anode_7SD[5]} T14
+place_ports {Anode_7SD[4]} P14
+place_ports {Anode_7SD[3]} J14
+place_ports {Anode_7SD[2]} T9
+place_ports {Anode_7SD[1]} J18
+place_ports {Anode_7SD[0]} J17
+place_ports {Cathode_7SD[7]} T10
+place_ports {Cathode_7SD[6]} R10
+place_ports {Cathode_7SD[5]} K16
+place_ports {Cathode_7SD[4]} K13
+place_ports {Cathode_7SD[3]} P15
+place_ports {Cathode_7SD[2]} T11
+place_ports {Cathode_7SD[1]} L18
+place_ports {Cathode_7SD[0]} H15
+set_property package_pin "" [get_ports [list  Reset]]
+place_ports Clock_System E3
+place_ports Reset J15
+file mkdir {C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/constrs_1/new}
+close [ open {C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/constrs_1/new/Top_module_constrain.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/constrs_1/new/Top_module_constrain.xdc}}
+set_property target_constrs_file {C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/constrs_1/new/Top_module_constrain.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/kbastola1/Desktop/Top Module/Top Module.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Mar 23 16:25:15 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Top Module/Top Module.runs/synth_1/runme.log
+[Thu Mar 23 16:25:15 2023] Launched impl_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Top Module/Top Module.runs/impl_1/runme.log
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Anode_7SD[7]} {Anode_7SD[6]} {Anode_7SD[5]} {Anode_7SD[4]} {Anode_7SD[3]} {Anode_7SD[2]} {Anode_7SD[1]} {Anode_7SD[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Cathode_7SD[7]} {Cathode_7SD[6]} {Cathode_7SD[5]} {Cathode_7SD[4]} {Cathode_7SD[3]} {Cathode_7SD[2]} {Cathode_7SD[1]} {Cathode_7SD[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Clock_System]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Reset]]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Mar 23 16:27:41 2023] Launched impl_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Top Module/Top Module.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1946.414 ; gain = 3.563
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B40953A
+set_property PROGRAM.FILE {C:/Users/kbastola1/Desktop/Top Module/Top Module.runs/impl_1/top_Module.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/kbastola1/Desktop/Top Module/Top Module.runs/impl_1/top_Module.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292B40953A
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/constrs_1/new/Top_module_constrain.xdc]
+Finished Parsing XDC File [C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/constrs_1/new/Top_module_constrain.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3293.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kbastola1/Desktop/Top Module/Top Module.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'topModule_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kbastola1/Desktop/Top Module/Top Module.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj topModule_bench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Top Module/Top Module.srcs/sources_1/imports/new/FrequencyDivider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FrequencyDivider'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kbastola1/Desktop/Top Module/Top Module.sim/sim_1/behav/xsim'
+"xelab -wto 8142457e973f4df398417ff618110f20 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot topModule_bench_behav xil_defaultlib.topModule_bench -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8142457e973f4df398417ff618110f20 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot topModule_bench_behav xil_defaultlib.topModule_bench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture boolean_function of entity xil_defaultlib.FrequencyDivider [frequencydivider_default]
+Compiling architecture boolean_function of entity xil_defaultlib.Lab_4B [lab_4b_default]
+Compiling architecture boolean_function of entity xil_defaultlib.Counter [counter_default]
+Compiling architecture boolean_function of entity xil_defaultlib.displayDigits [displaydigits_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_Module [top_module_default]
+Compiling architecture bench of entity xil_defaultlib.topmodule_bench
+Built simulation snapshot topModule_bench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kbastola1/Desktop/Top Module/Top Module.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "topModule_bench_behav -key {Behavioral:sim_1:Functional:topModule_bench} -tclbatch {topModule_bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source topModule_bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'topModule_bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3588.160 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 23 16:46:04 2023...

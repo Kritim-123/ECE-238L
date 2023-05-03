@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../FrequencyDivider.srcs/sources_1/new/FrequencyDivider.vhd" \
+"../../../../FrequencyDivider.srcs/sim_1/new/FrequencyDivider_bench.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 23 15:51:53 2023
+# Process ID: 17492
+# Current directory: C:/Users/kbastola1/Desktop/Lab2C/Lab2C.runs/synth_1
+# Command line: vivado.exe -log Lab_2C.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Lab_2C.tcl
+# Log file: C:/Users/kbastola1/Desktop/Lab2C/Lab2C.runs/synth_1/Lab_2C.vds
+# Journal file: C:/Users/kbastola1/Desktop/Lab2C/Lab2C.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Lab_2C.tcl -notrace

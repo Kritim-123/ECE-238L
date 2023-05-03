@@ -1,0 +1,1 @@
+-wto "f2498544386a47578a2a25891f31c629" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Smiley_Face_tb_behav" "xil_defaultlib.Smiley_Face_tb" -log "elaborate.log" 

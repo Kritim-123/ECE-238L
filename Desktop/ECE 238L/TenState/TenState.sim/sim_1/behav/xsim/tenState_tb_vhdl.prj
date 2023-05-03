@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TenState.srcs/sources_1/imports/new/FrequencyDivider.vhd" \
+"../../../../TenState.srcs/sources_1/imports/new/displayDigits.vhd" \
+"../../../../TenState.srcs/sources_1/new/tenState.vhd" \
+"../../../../TenState.srcs/sources_1/new/tenStateCounter.vhd" \
+"../../../../TenState.srcs/sim_1/new/tenState_tb.vhd" \
+
+# Do not sort compile order
+nosort

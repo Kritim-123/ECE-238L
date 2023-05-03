@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Top Module.srcs/sources_1/imports/new/Counter.vhd" \
+"../../../../Top Module.srcs/sources_1/imports/new/FrequencyDivider.vhd" \
+"../../../../Top Module.srcs/sources_1/imports/new/Lab_4B.vhd" \
+"../../../../Top Module.srcs/sources_1/imports/new/displayDigits.vhd" \
+"../../../../Top Module.srcs/sources_1/new/top_Module.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Apr  6 15:24:01 2023
+# Process ID: 14612
+# Current directory: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2136 C:\Users\kbastola1\Desktop\Robot_Eye_Sequence\Robot_Eye_Sequence.xpr
+# Log file: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/vivado.log
+# Journal file: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.xpr
+update_compile_order -fileset sources_1
+open_run impl_1
+launch_simulation
+source Robot_Eye_tb.tcl
+close_sim
+launch_simulation
+source Robot_Eye_tb.tcl
+close_sim
+launch_simulation
+source Robot_Eye_tb.tcl
+close_sim
+launch_simulation
+source Robot_Eye_tb.tcl
+close_sim

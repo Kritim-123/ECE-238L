@@ -1,0 +1,7 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c370906e2de546b5ad9396362eac658d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Lab5_bench_behav xil_defaultlib.Lab5_bench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <Reset> does not exist in entity <Lab_4B>.  Please compare the definition of block <Lab_4B> to its component declaration and its instantion to detect the mismatch. [C:/Users/kbastola1/Desktop/Lab5/Lab5.srcs/sources_1/imports/new/Counter.vhd:52]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit lab5_bench in library work failed.

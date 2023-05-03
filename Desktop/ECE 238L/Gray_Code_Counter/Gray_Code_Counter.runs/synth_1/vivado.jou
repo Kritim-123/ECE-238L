@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Apr  6 16:30:29 2023
+# Process ID: 13548
+# Current directory: C:/Users/kbastola1/Desktop/Gray_Code_Counter/Gray_Code_Counter.runs/synth_1
+# Command line: vivado.exe -log grayCode.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source grayCode.tcl
+# Log file: C:/Users/kbastola1/Desktop/Gray_Code_Counter/Gray_Code_Counter.runs/synth_1/grayCode.vds
+# Journal file: C:/Users/kbastola1/Desktop/Gray_Code_Counter/Gray_Code_Counter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source grayCode.tcl -notrace

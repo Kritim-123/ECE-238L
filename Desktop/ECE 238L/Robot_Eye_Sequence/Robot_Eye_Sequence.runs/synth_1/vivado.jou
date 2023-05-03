@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Mar 30 18:07:48 2023
+# Process ID: 4860
+# Current directory: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1
+# Command line: vivado.exe -log Robot_Eye.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Robot_Eye.tcl
+# Log file: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1/Robot_Eye.vds
+# Journal file: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Robot_Eye.tcl -notrace

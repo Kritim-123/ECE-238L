@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/TenState/TenState.srcs/sources_1/imports/new/FrequencyDivider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FrequencyDivider'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/TenState/TenState.srcs/sources_1/imports/new/displayDigits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'displayDigits'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/TenState/TenState.srcs/sources_1/new/tenState.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tenState'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/TenState/TenState.srcs/sources_1/new/tenStateCounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tenStateCounter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/TenState/TenState.srcs/sim_1/new/tenState_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tenState_tb'

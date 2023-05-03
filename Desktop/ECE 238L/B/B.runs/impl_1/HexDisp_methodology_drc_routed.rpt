@@ -1,0 +1,101 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Apr 27 16:03:41 2023
+| Host         : ece-d64251 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file HexDisp_methodology_drc_routed.rpt -pb HexDisp_methodology_drc_routed.pb -rpx HexDisp_methodology_drc_routed.rpx
+| Design       : HexDisp
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 13
++-----------+------------------+------------------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                                      | Violations |
++-----------+------------------+------------------------------------------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                                      | 12         |
+| CKLD-2    | Warning          | Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads | 1          |
++-----------+------------------+------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin SevSegvalues/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/a_reg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin SevSegvalues/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/a_reg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin SevSegvalues/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/a_reg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin SevSegvalues/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/a_reg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin SevSegvalues/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/qspo_int_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin SevSegvalues/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/qspo_int_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin SevSegvalues/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/qspo_int_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin SevSegvalues/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/qspo_int_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin SevSegvalues/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/qspo_int_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin SevSegvalues/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/qspo_int_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin SevSegvalues/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/qspo_int_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin SevSegvalues/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/qspo_int_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+CKLD-2#1 Warning
+Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads  
+Clock net clk_IBUF is directly driven by an IO rather than a Clock Buffer or may be an IO driving a mix of Clock Buffer and non-Clock loads. This connectivity should be reviewed and corrected as appropriate. Driver(s): clk_IBUF_inst/O, SevSegvalues/clk
+Related violations: <none>
+
+

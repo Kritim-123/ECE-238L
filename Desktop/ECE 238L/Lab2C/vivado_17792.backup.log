@@ -1,0 +1,233 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 23 15:15:36 2023
+# Process ID: 17792
+# Current directory: C:/Users/kbastola1/Desktop/Lab2C
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17560 C:\Users\kbastola1\Desktop\Lab2C\Lab2C.xpr
+# Log file: C:/Users/kbastola1/Desktop/Lab2C/vivado.log
+# Journal file: C:/Users/kbastola1/Desktop/Lab2C\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kbastola1/Desktop/Lab2C/Lab2C.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:33 . Memory (MB): peak = 766.938 ; gain = 171.797
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kbastola1/Desktop/Lab2C/Lab2C.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Lab_2C' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kbastola1/Desktop/Lab2C/Lab2C.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Lab_2C_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kbastola1/Desktop/Lab2C/Lab2C.sim/sim_1/behav/xsim'
+"xelab -wto cc41e988848d423d83f1cf18ebd38345 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Lab_2C_behav xil_defaultlib.Lab_2C -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto cc41e988848d423d83f1cf18ebd38345 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Lab_2C_behav xil_defaultlib.Lab_2C -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kbastola1/Desktop/Lab2C/Lab2C.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Lab_2C_behav -key {Behavioral:sim_1:Functional:Lab_2C} -tclbatch {Lab_2C.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Lab_2C.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Lab_2C_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 813.434 ; gain = 11.020
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kbastola1/Desktop/Lab2C/Lab2C.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab2C_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kbastola1/Desktop/Lab2C/Lab2C.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj lab2C_bench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Lab2C/Lab2C.srcs/sim_1/new/lab2C_bench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lab2C_bench'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kbastola1/Desktop/Lab2C/Lab2C.sim/sim_1/behav/xsim'
+"xelab -wto cc41e988848d423d83f1cf18ebd38345 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot lab2C_bench_behav xil_defaultlib.lab2C_bench -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto cc41e988848d423d83f1cf18ebd38345 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot lab2C_bench_behav xil_defaultlib.lab2C_bench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture boolean_function of entity xil_defaultlib.Lab2A [lab2a_default]
+Compiling architecture boolean_function of entity xil_defaultlib.Lab2B [lab2b_default]
+Compiling architecture structural of entity xil_defaultlib.Lab_2C [lab_2c_default]
+Compiling architecture bench of entity xil_defaultlib.lab2c_bench
+Built simulation snapshot lab2C_bench_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/kbastola1/Desktop/Lab2C/Lab2C.sim/sim_1/behav/xsim/xsim.dir/lab2C_bench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/kbastola1/Desktop/Lab2C/Lab2C.sim/sim_1/behav/xsim/xsim.dir/lab2C_bench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Feb 23 15:22:50 2023. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 23 15:22:50 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 843.445 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kbastola1/Desktop/Lab2C/Lab2C.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab2C_bench_behav -key {Behavioral:sim_1:Functional:lab2C_bench} -tclbatch {lab2C_bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source lab2C_bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab2C_bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 843.445 ; gain = 0.000
+launch_runs impl_1 -jobs 4
+[Thu Feb 23 15:23:04 2023] Launched impl_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Lab2C/Lab2C.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1159.219 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1159.219 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1159.484 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1320.672 ; gain = 464.457
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Feb 23 15:24:38 2023] Launched impl_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Lab2C/Lab2C.runs/impl_1/runme.log
+set_property IOSTANDARD LVCMOS33 [get_ports [list {A[3]} {A[2]} {A[1]} {A[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {B[3]} {B[2]} {B[1]} {B[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Sum[3]} {Sum[2]} {Sum[1]} {Sum[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Cin]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Cout]]
+place_ports {A[3]} J15
+place_ports {A[2]} L16
+place_ports {A[1]} M13
+place_ports {A[0]} R15
+startgroup
+set_property package_pin "" [get_ports [list  {A[3]}]]
+place_ports {A[0]} J15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {A[2]}]]
+place_ports {A[1]} L16
+endgroup
+place_ports {A[2]} M13
+place_ports {A[3]} R15
+place_ports {B[0]} R16
+place_ports {B[0]} R17
+place_ports {B[1]} T18
+place_ports {B[2]} U18
+place_ports {B[3]} R13
+place_ports {Sum[0]} H17
+place_ports {Sum[1]} K15
+place_ports {Sum[2]} J13
+place_ports {Sum[3]} N14
+place_ports Cin T8
+place_ports Cout R18
+file mkdir C:/Users/kbastola1/Desktop/Lab2C/Lab2C.srcs/constrs_1/new
+close [ open C:/Users/kbastola1/Desktop/Lab2C/Lab2C.srcs/constrs_1/new/Lab2C_constrain.xdc w ]
+add_files -fileset constrs_1 C:/Users/kbastola1/Desktop/Lab2C/Lab2C.srcs/constrs_1/new/Lab2C_constrain.xdc
+set_property target_constrs_file C:/Users/kbastola1/Desktop/Lab2C/Lab2C.srcs/constrs_1/new/Lab2C_constrain.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/kbastola1/Desktop/Lab2C/Lab2C.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Feb 23 15:32:59 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Lab2C/Lab2C.runs/synth_1/runme.log
+[Thu Feb 23 15:32:59 2023] Launched impl_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Lab2C/Lab2C.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1859.914 ; gain = 6.488
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B409D2A
+set_property PROGRAM.FILE {C:/Users/kbastola1/Desktop/Lab2C/Lab2C.runs/impl_1/Lab_2C.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/kbastola1/Desktop/Lab2C/Lab2C.runs/impl_1/Lab_2C.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/kbastola1/Desktop/Lab2C/Lab2C.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu Feb 23 15:51:50 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Lab2C/Lab2C.runs/synth_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292B409D2A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 3010.484 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 23 16:14:44 2023...

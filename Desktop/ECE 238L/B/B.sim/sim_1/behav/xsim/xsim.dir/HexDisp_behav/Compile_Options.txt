@@ -1,0 +1,1 @@
+-wto "af27e29b667b47998afd47d769fdcb9b" --incr --debug "typical" --relax --mt "2" -L "dist_mem_gen_v8_0_13" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "HexDisp_behav" "xil_defaultlib.HexDisp" "xil_defaultlib.glbl" -log "elaborate.log" 

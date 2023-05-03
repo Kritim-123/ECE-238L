@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 23 18:31:11 2023
+# Process ID: 23368
+# Current directory: C:/Users/kbastola1/Desktop/Display
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16300 C:\Users\kbastola1\Desktop\Display\Display.xpr
+# Log file: C:/Users/kbastola1/Desktop/Display/vivado.log
+# Journal file: C:/Users/kbastola1/Desktop/Display\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kbastola1/Desktop/Display/Display.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 825.195 ; gain = 145.176
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/kbastola1/Desktop/Display/Display.srcs/constrs_1/new/Display_constrain.xdc]
+Finished Parsing XDC File [C:/Users/kbastola1/Desktop/Display/Display.srcs/constrs_1/new/Display_constrain.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1195.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1314.785 ; gain = 428.902

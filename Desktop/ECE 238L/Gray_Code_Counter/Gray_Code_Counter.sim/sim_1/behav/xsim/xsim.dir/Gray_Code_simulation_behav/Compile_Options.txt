@@ -1,0 +1,1 @@
+-wto "9e7cfe53670e42dab354c8380c81c751" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Gray_Code_simulation_behav" "xil_defaultlib.Gray_Code_simulation" -log "elaborate.log" 

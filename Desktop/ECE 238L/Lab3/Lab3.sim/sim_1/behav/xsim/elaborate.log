@@ -1,0 +1,18 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b4109afe2f4748b2975d1e13ba1de8c5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Lab_bench_behav xil_defaultlib.Lab_bench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture boolean_function of entity xil_defaultlib.Gates [gates_default]
+Compiling architecture boolean_function of entity xil_defaultlib.Multiplexer [multiplexer_default]
+Compiling architecture boolean_function of entity xil_defaultlib.Display [display_default]
+Compiling architecture boolean_function of entity xil_defaultlib.Lab3 [lab3_default]
+Compiling architecture bench of entity xil_defaultlib.lab_bench
+Built simulation snapshot Lab_bench_behav

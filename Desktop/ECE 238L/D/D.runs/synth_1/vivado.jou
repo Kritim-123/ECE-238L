@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Apr 27 17:11:35 2023
+# Process ID: 21152
+# Current directory: C:/Users/kbastola1/Desktop/D/D.runs/synth_1
+# Command line: vivado.exe -log TopModule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopModule.tcl
+# Log file: C:/Users/kbastola1/Desktop/D/D.runs/synth_1/TopModule.vds
+# Journal file: C:/Users/kbastola1/Desktop/D/D.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopModule.tcl -notrace

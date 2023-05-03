@@ -1,0 +1,15 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Mar  9 14:34:48 2023
+| Host         : ece-d64251 running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file FrequencyDivider_bus_skew_routed.rpt -pb FrequencyDivider_bus_skew_routed.pb -rpx FrequencyDivider_bus_skew_routed.rpx
+| Design       : FrequencyDivider
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

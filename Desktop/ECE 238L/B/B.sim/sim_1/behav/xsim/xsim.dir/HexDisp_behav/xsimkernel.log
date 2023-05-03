@@ -1,0 +1,4 @@
+Running: xsim.dir/HexDisp_behav/xsimk.exe -simmode gui -wdb HexDisp_behav.wdb -simrunnum 0 -socket 57726
+Design successfully loaded
+Design Loading Memory Usage: 5844 KB (Peak: 5844 KB)
+Design Loading CPU Usage: 62 ms

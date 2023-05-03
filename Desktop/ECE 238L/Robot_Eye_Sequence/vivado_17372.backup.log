@@ -1,0 +1,826 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Mar 30 15:55:56 2023
+# Process ID: 17372
+# Current directory: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17020 C:\Users\kbastola1\Desktop\Robot_Eye_Sequence\Robot_Eye_Sequence.xpr
+# Log file: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/vivado.log
+# Journal file: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:37 . Memory (MB): peak = 751.156 ; gain = 147.004
+update_compile_order -fileset sources_1
+close [ open C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd w ]
+add_files C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Thu Mar 30 16:34:01 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1121.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1294.715 ; gain = 491.117
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Mar 30 16:36:53 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1/runme.log
+file mkdir C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sim_1/new/Robot_Eye_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sim_1/new/Robot_Eye_tb.vhd
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FrequencyDivider' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj FrequencyDivider_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/imports/new/FrequencyDivider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FrequencyDivider'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xelab -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FrequencyDivider_behav xil_defaultlib.FrequencyDivider -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FrequencyDivider_behav xil_defaultlib.FrequencyDivider -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture boolean_function of entity xil_defaultlib.frequencydivider
+Built simulation snapshot FrequencyDivider_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim/xsim.dir/FrequencyDivider_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim/xsim.dir/FrequencyDivider_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Mar 30 16:53:21 2023. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 30 16:53:21 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1842.039 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FrequencyDivider_behav -key {Behavioral:sim_1:Functional:FrequencyDivider} -tclbatch {FrequencyDivider.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source FrequencyDivider.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FrequencyDivider_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1863.848 ; gain = 21.809
+update_compile_order -fileset sim_1
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1883.027 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Robot_Eye_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Robot_Eye_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Robot_Eye'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sim_1/new/Robot_Eye_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Robot_Eye_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xelab -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 7 elements ; expected 8 [C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd:61]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit robot_eye_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_design
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Robot_Eye_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Robot_Eye_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xelab -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 7 elements ; expected 8 [C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd:61]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit robot_eye_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Mar 30 17:02:28 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Robot_Eye_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Robot_Eye_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Robot_Eye'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xelab -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd:62]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd:63]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd:64]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd:65]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd:66]
+ERROR: [VRFC 10-664] expression has 5 elements ; expected 4 [C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd:62]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit robot_eye_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Mar 30 17:04:31 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Robot_Eye_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Robot_Eye_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Robot_Eye'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xelab -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 4 elements ; expected 5 [C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd:47]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit robot_eye_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Mar 30 17:06:57 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Robot_Eye_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Robot_Eye_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Robot_Eye'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xelab -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Robot_Eye [robot_eye_default]
+Compiling architecture bench of entity xil_defaultlib.robot_eye_tb
+Built simulation snapshot Robot_Eye_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim/xsim.dir/Robot_Eye_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim/xsim.dir/Robot_Eye_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Mar 30 17:07:43 2023. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 30 17:07:43 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Robot_Eye_tb_behav -key {Behavioral:sim_1:Functional:Robot_Eye_tb} -tclbatch {Robot_Eye_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Robot_Eye_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Robot_Eye_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1883.027 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Mar 30 17:08:51 2023] Launched impl_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1883.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_design
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1970.965 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1970.965 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1970.965 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+place_ports Clock_1Hz E3
+startgroup
+set_property package_pin "" [get_ports [list  Clock_1Hz]]
+place_ports Clock_System E3
+endgroup
+set_property package_pin "" [get_ports [list  Clock_1Hz]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Clock_1Hz]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Clock_System]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Clock_1Hz]]
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2209.594 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+set_property IOSTANDARD LVCMOS33 [get_ports [list Clock_1Hz]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Clock_System]]
+set_property package_pin "" [get_ports [list  Clock_1Hz]]
+current_design impl_1
+close_design
+close_design
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Robot_Eye_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Robot_Eye_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xelab -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Robot_Eye_tb_behav -key {Behavioral:sim_1:Functional:Robot_Eye_tb} -tclbatch {Robot_Eye_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Robot_Eye_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Robot_Eye_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2341.309 ; gain = 0.000
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2341.309 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu Mar 30 17:28:04 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1/runme.log
+set_property used_in_simulation false [get_files  C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/imports/new/FrequencyDivider.vhd]
+set_property used_in_synthesis false [get_files  C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/imports/new/FrequencyDivider.vhd]
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu Mar 30 17:28:41 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1/runme.log
+refresh_design
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Anode_7SD[7]} {Anode_7SD[6]} {Anode_7SD[5]} {Anode_7SD[4]} {Anode_7SD[3]} {Anode_7SD[2]} {Anode_7SD[1]} {Anode_7SD[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Cathode_7SD[7]} {Cathode_7SD[6]} {Cathode_7SD[5]} {Cathode_7SD[4]} {Cathode_7SD[3]} {Cathode_7SD[2]} {Cathode_7SD[1]} {Cathode_7SD[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Clock_System]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Reset]]
+place_ports Clock_System E3
+place_ports Reset J15
+set_property package_pin "" [get_ports [list  {Cathode_7SD[4]}]]
+place_ports {Anode_7SD[7]} J17
+startgroup
+set_property package_pin "" [get_ports [list  {Anode_7SD[7]}]]
+place_ports {Anode_7SD[0]} J17
+endgroup
+place_ports {Anode_7SD[1]} J18
+place_ports {Anode_7SD[2]} T9
+place_ports {Anode_7SD[3]} J14
+place_ports {Anode_7SD[4]} P14
+place_ports {Anode_7SD[5]} T14
+place_ports {Anode_7SD[6]} K2
+place_ports {Anode_7SD[7]} U13
+place_ports {Cathode_7SD[7]} T10
+place_ports {Cathode_7SD[6]} R10
+place_ports {Cathode_7SD[5]} K16
+place_ports {Cathode_7SD[4]} K13
+place_ports {Cathode_7SD[3]} P15
+place_ports {Cathode_7SD[2]} T11
+place_ports {Cathode_7SD[1]} L18
+place_ports {Cathode_7SD[0]} H15
+file mkdir C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/constrs_1/new
+close [ open C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/constrs_1/new/Robot_Eye_constrain.xdc w ]
+add_files -fileset constrs_1 C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/constrs_1/new/Robot_Eye_constrain.xdc
+set_property target_constrs_file C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/constrs_1/new/Robot_Eye_constrain.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Mar 30 17:36:45 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1/runme.log
+[Thu Mar 30 17:36:45 2023] Launched impl_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Robot_Eye_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Robot_Eye_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xelab -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Robot_Eye_tb_behav -key {Behavioral:sim_1:Functional:Robot_Eye_tb} -tclbatch {Robot_Eye_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Robot_Eye_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Robot_Eye_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu Mar 30 17:44:26 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Robot_Eye_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Robot_Eye_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Robot_Eye'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xelab -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture boolean_function of entity xil_defaultlib.FrequencyDivider [frequencydivider_default]
+Compiling architecture behavioral of entity xil_defaultlib.Robot_Eye [robot_eye_default]
+Compiling architecture bench of entity xil_defaultlib.robot_eye_tb
+Built simulation snapshot Robot_Eye_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Robot_Eye_tb_behav -key {Behavioral:sim_1:Functional:Robot_Eye_tb} -tclbatch {Robot_Eye_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Robot_Eye_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Robot_Eye_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2341.309 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Robot_Eye_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Robot_Eye_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sim_1/new/Robot_Eye_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Robot_Eye_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xelab -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture boolean_function of entity xil_defaultlib.FrequencyDivider [frequencydivider_default]
+Compiling architecture behavioral of entity xil_defaultlib.Robot_Eye [robot_eye_default]
+Compiling architecture bench of entity xil_defaultlib.robot_eye_tb
+Built simulation snapshot Robot_Eye_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Robot_Eye_tb_behav -key {Behavioral:sim_1:Functional:Robot_Eye_tb} -tclbatch {Robot_Eye_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Robot_Eye_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Robot_Eye_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2341.309 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Mar 30 17:48:54 2023] Launched impl_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Mar 30 17:50:50 2023] Launched impl_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/impl_1/runme.log
+close_design
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu Mar 30 17:51:53 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu Mar 30 17:53:05 2023] Launched impl_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/constrs_1/new/Robot_Eye_constrain.xdc]
+Finished Parsing XDC File [C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/constrs_1/new/Robot_Eye_constrain.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'FrequencyDivider' instantiated as 'ff0' [C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd:71]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2365.164 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu Mar 30 17:56:22 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Robot_Eye_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Robot_Eye_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Robot_Eye'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+"xelab -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8f408a4c75a646b1b97c142daea2d2bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Robot_Eye_tb_behav xil_defaultlib.Robot_Eye_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture boolean_function of entity xil_defaultlib.FrequencyDivider [frequencydivider_default]
+Compiling architecture behavioral of entity xil_defaultlib.Robot_Eye [robot_eye_default]
+Compiling architecture bench of entity xil_defaultlib.robot_eye_tb
+Built simulation snapshot Robot_Eye_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Robot_Eye_tb_behav -key {Behavioral:sim_1:Functional:Robot_Eye_tb} -tclbatch {Robot_Eye_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Robot_Eye_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Robot_Eye_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2403.813 ; gain = 0.344
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Mar 30 17:57:51 2023] Launched impl_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/impl_1/runme.log
+set_property used_in_synthesis true [get_files  C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/imports/new/FrequencyDivider.vhd]
+set_property used_in_simulation true [get_files  C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.srcs/sources_1/imports/new/FrequencyDivider.vhd]
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1
+
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Mar 30 18:02:46 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1/runme.log
+[Thu Mar 30 18:02:46 2023] Launched impl_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 2403.813 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 2403.813 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2403.813 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Mar 30 18:04:47 2023] Launched impl_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B409E5A
+set_property PROGRAM.FILE {C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/impl_1/Robot_Eye.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/impl_1/Robot_Eye.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Mar 30 18:07:46 2023] Launched synth_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/synth_1/runme.log
+[Thu Mar 30 18:07:46 2023] Launched impl_1...
+Run output will be captured here: C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/kbastola1/Desktop/Robot_Eye_Sequence/Robot_Eye_Sequence.runs/impl_1/Robot_Eye.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292B409E5A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 30 18:11:51 2023...

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1682632923">
+  <File Type="BITSTR-BMM" Name="HexDisp_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="HexDisp_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="HexDisp_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="HexDisp_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="HexDisp.tcl"/>
+  <File Type="OPT-TIMING" Name="HexDisp_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="HexDisp_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="HexDisp_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="HexDisp_reports.tcl"/>
+  <File Type="OPT-DRC" Name="HexDisp_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="HexDisp.hwdef"/>
+  <File Type="PWROPT-DCP" Name="HexDisp_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="HexDisp_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="HexDisp_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="HexDisp_placed.dcp"/>
+  <File Type="PLACE-IO" Name="HexDisp_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="HexDisp_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="HexDisp_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="HexDisp_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="HexDisp_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="HexDisp_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="HexDisp_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="HexDisp.bgn"/>
+  <File Type="PLACE-TIMING" Name="HexDisp_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="HexDisp_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="HexDisp.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="HexDisp_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="HexDisp_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="HexDisp_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="HexDisp.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="HexDisp_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="HexDisp_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="HexDisp_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="HexDisp_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="HexDisp_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="HexDisp_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="HexDisp.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="HexDisp_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="HexDisp.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="HexDisp_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="HexDisp_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="HexDisp.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="HexDisp_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="HexDisp_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="HexDisp_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="HexDisp_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="HexDisp_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="HexDisp_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="HexDisp_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="HexDisp_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="HexDisp_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="HexDisp_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="HexDisp_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="HexDisp_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="HexDisp_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="HexDisp_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="HexDisp_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="HexDisp_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="HexDisp_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="HexDisp_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="HexDisp_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="HexDisp.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="HexDisp_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="HexDisp.rbt"/>
+  <File Type="BITSTR-NKY" Name="HexDisp.nky"/>
+  <File Type="BG-DRC" Name="HexDisp.drc"/>
+  <File Type="RDI-RDI" Name="HexDisp.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/HexDisp.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Documents/ROM_COE.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="HexDisp"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/B_constrain.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/B_constrain.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ROM"/>
+</GenRun>

@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Robot_Eye_Sequence.srcs/sources_1/imports/new/FrequencyDivider.vhd" \
+"../../../../Robot_Eye_Sequence.srcs/sources_1/new/Robot_Eye.vhd" \
+"../../../../Robot_Eye_Sequence.srcs/sim_1/new/Robot_Eye_tb.vhd" \
+
+# Do not sort compile order
+nosort

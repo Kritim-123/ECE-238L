@@ -1,0 +1,1 @@
+-wto "8f408a4c75a646b1b97c142daea2d2bd" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Robot_Eye_tb_behav" "xil_defaultlib.Robot_Eye_tb" -log "elaborate.log" 

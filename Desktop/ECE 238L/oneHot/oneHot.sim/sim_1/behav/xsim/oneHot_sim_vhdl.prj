@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../oneHot.srcs/sources_1/imports/new/FrequencyDivider.vhd" \
+"../../../../oneHot.srcs/sources_1/new/oneHot.vhd" \
+"../../../../oneHot.srcs/sim_1/new/oneHot_sim.vhd" \
+
+# Do not sort compile order
+nosort

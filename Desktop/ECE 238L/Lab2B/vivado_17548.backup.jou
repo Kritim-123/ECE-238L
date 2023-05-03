@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 23 15:55:48 2023
+# Process ID: 17548
+# Current directory: C:/Users/kbastola1/Desktop/Lab2B
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17296 C:\Users\kbastola1\Desktop\Lab2B\Lab2B.xpr
+# Log file: C:/Users/kbastola1/Desktop/Lab2B/vivado.log
+# Journal file: C:/Users/kbastola1/Desktop/Lab2B\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kbastola1/Desktop/Lab2B/Lab2B.xpr
+update_compile_order -fileset sources_1

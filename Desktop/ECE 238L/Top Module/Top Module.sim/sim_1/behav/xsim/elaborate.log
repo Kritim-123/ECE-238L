@@ -1,0 +1,20 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8142457e973f4df398417ff618110f20 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot topModule_bench_behav xil_defaultlib.topModule_bench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture boolean_function of entity xil_defaultlib.FrequencyDivider [frequencydivider_default]
+Compiling architecture boolean_function of entity xil_defaultlib.Lab_4B [lab_4b_default]
+Compiling architecture boolean_function of entity xil_defaultlib.Counter [counter_default]
+Compiling architecture boolean_function of entity xil_defaultlib.displayDigits [displaydigits_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_Module [top_module_default]
+Compiling architecture bench of entity xil_defaultlib.topmodule_bench
+Built simulation snapshot topModule_bench_behav

@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 23 15:15:36 2023
+# Process ID: 17792
+# Current directory: C:/Users/kbastola1/Desktop/Lab2C
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17560 C:\Users\kbastola1\Desktop\Lab2C\Lab2C.xpr
+# Log file: C:/Users/kbastola1/Desktop/Lab2C/vivado.log
+# Journal file: C:/Users/kbastola1/Desktop/Lab2C\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kbastola1/Desktop/Lab2C/Lab2C.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Lab_2C.tcl
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source lab2C_bench.tcl
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {A[3]} {A[2]} {A[1]} {A[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {B[3]} {B[2]} {B[1]} {B[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Sum[3]} {Sum[2]} {Sum[1]} {Sum[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Cin]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Cout]]
+place_ports {A[3]} J15
+place_ports {A[2]} L16
+place_ports {A[1]} M13
+place_ports {A[0]} R15
+startgroup
+set_property package_pin "" [get_ports [list  {A[3]}]]
+place_ports {A[0]} J15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {A[2]}]]
+place_ports {A[1]} L16
+endgroup
+place_ports {A[2]} M13
+place_ports {A[3]} R15
+place_ports {B[0]} R16
+place_ports {B[0]} R17
+place_ports {B[1]} T18
+place_ports {B[2]} U18
+place_ports {B[3]} R13
+place_ports {Sum[0]} H17
+place_ports {Sum[1]} K15
+place_ports {Sum[2]} J13
+place_ports {Sum[3]} N14
+place_ports Cin T8
+place_ports Cout R18
+file mkdir C:/Users/kbastola1/Desktop/Lab2C/Lab2C.srcs/constrs_1/new
+close [ open C:/Users/kbastola1/Desktop/Lab2C/Lab2C.srcs/constrs_1/new/Lab2C_constrain.xdc w ]
+add_files -fileset constrs_1 C:/Users/kbastola1/Desktop/Lab2C/Lab2C.srcs/constrs_1/new/Lab2C_constrain.xdc
+set_property target_constrs_file C:/Users/kbastola1/Desktop/Lab2C/Lab2C.srcs/constrs_1/new/Lab2C_constrain.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/kbastola1/Desktop/Lab2C/Lab2C.runs/impl_1/Lab_2C.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/kbastola1/Desktop/Lab2C/Lab2C.runs/impl_1/Lab_2C.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim

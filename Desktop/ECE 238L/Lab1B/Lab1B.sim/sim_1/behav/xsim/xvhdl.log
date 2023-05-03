@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Lab1B/Lab1B.srcs/sources_1/new/Lab1B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab1B'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kbastola1/Desktop/Lab1B/Lab1B.srcs/sim_1/new/Lab1B_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab1B_tb'

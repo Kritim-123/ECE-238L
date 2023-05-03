@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 23 11:52:36 2023
+# Process ID: 12628
+# Current directory: C:/Users/kbastola1/Desktop/Lab2C
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6040 C:\Users\kbastola1\Desktop\Lab2C\Lab2C.xpr
+# Log file: C:/Users/kbastola1/Desktop/Lab2C/vivado.log
+# Journal file: C:/Users/kbastola1/Desktop/Lab2C\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kbastola1/Desktop/Lab2C/Lab2C.xpr
+uupdate_compile_order -fileset sources_1launch_simulation
+source Lab_2C.tcl
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source Lab_2C.tcl
+close_sim
+launch_simulation
+source Lab_2C.tcl
+open_run synth_1 -name synth_1
+close_sim
